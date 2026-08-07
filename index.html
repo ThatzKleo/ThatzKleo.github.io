@@ -26,7 +26,7 @@
                     0% {transform: translateY(-4px); transform: scale(50%); opacity: 0%;}
                     100% {transform: translateY(0px); transform: scale(100%); opacity: 100%;}
                 }
-                .center-div {
+                .siteupdates {
                     max-height: 80px;
                     overflow: hidden;
                     width: 50%;
@@ -38,7 +38,23 @@
                     transition: max-height 0.3s ease-in-out;
                 }
 
-                .center-div.open {
+                .siteupdates.open {
+                    max-height: 500px;
+                }
+
+                .otherupdates {
+                    max-height: 80px;
+                    overflow: hidden;
+                    width: 50%;
+                    margin: 0 auto;
+                    margin-top: 80px;
+                    border-radius: 50px;
+                    border: 5px solid rgb(49, 49, 49);
+                    background-color: rgb(23, 16, 27);
+                    transition: max-height 0.3s ease-in-out;
+                }
+
+                .otherupdates.open {
                     max-height: 500px;
                 }
 
@@ -132,9 +148,17 @@
                 "></input>
             </div>
 
+            <!-- Other updates here-->
+            <div id="Expand1" class="otherupdates" style="border-radius: 5px; border: 4px solid black; width: 90%; overflow: hidden;">
+                <button onclick="otherCandE()" class="showmorebutton" >-Show more-</button>
+
+                <h1 class="headerforprojectupd">Other Updates</h1> <h4 style="color: white; font-size: 12px; font-family: 'Poppins', sans-serif;">(started -> Not Started <-)</h4>
+                
+            </div>
+
             <!-- Site updates here -->
-            <div id="Expand" class="center-div" style="border-radius: 5px; border: 4px solid black; width: 90%; overflow: hidden;">
-                <button onclick="collapseandexpand()" class="showmorebutton" >-Show more-</button>
+            <div id="Expand" class="siteupdates" style="border-radius: 5px; border: 4px solid black; width: 90%; overflow: hidden;">
+                <button onclick="siteCandE()" class="showmorebutton" >-Show more-</button>
 
                 <h1 class="headerforprojectupd">Site Updates</h1> <h4 style="color: white; font-size: 12px; font-family: 'Poppins', sans-serif;">(started 06.07.2026r)</h4>
 
@@ -142,6 +166,7 @@
                 <p class="insideofprojectupd"> > added devlog thingy like this :3</p>
                 <p class="insideofprojectupd"> > also i added some gradient background to make the site look nices. :p</p>
                 <p class="insideofprojectupd"> > ps.. love yall for looking at my artpiece (this site)</p>
+                <p class="insideofprojectupd"> > Added another updates kind of tab for any new project in the future</p>
 
 
 
